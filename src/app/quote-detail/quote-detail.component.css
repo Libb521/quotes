@@ -1,0 +1,9 @@
+p{
+    font-size: 15px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+span{
+    background-color: black;
+    justify-content: space-around;
+}
