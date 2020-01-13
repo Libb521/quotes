@@ -1,15 +1,26 @@
-<h1>Inspirational Quotes</h1>
-<hr>
-<ul>
-  <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.name}} posted on {{quote.completeDate|date}}</li> <br>
-    <button (click)='toggleDetails(i)'>Show details</button>
-    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event, i)'></app-quote-detail>
+<div class="container">
+  <h1>Inspirational Quotes</h1>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quotes;let i = index'>
+        <div>
+          <h4>{{quote.name}} due on {{quote.completeDate|date}}</h4>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">Show details</button>
+        </div>
+
+        <div *ngIf='quote.showDescription'>
+          <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event, i)'></app-quote-detail>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <app-quote-form></app-quote-form>
+    </div>
+    </div>
+    <p *ngIf='quotes.length > 2'>Get inspired :-)</p>
   </div>
-</ul>
-<p *ngIf='quotes.length > 2'>Get inspired :-)</p>
+  
 
-
-<!-- <button class="btn btn-info" (click)="upvote(i)">Upvote </button>
-                    <button class="btn btn-info" (click)="downvote(i)">Downvote </button>
-                    <button class="btn btn-danger" (click)="delQuote(i)">Delete</button> -->
+  
