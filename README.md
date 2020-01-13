@@ -1,27 +1,42 @@
 # Quotes
+#### Quotes, January 13th 2020
+#### By **Elizabeth Ayiemba Otieno**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+## Description
+- This is and application that enables a user view already exisiting inspirational quotes, like or dislike the quote, the user can delete the quote if the feel like it and finally the user has the ability to add their own quotes and they will be posted.
 
-## Development server
+## Behaviour Driven Development(BDD)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+| Input                        | Ouput                                                                                            |
+|--------------------------    |----------------------------------------------------------------------------------------------    |
+| User clicks Post  Quote     | Quote form displays with input fields for Author, user                  |
+| User Clicks Delete           | The quote is purged from view             |
+| User clicks Upvote        |   upvote is incremented value by   1 on each click      |
+| User clicks Downvote     | downvote is decremented value by 1 on each click     |
 
-## Code scaffolding
+## Setup/Installation requirements
+Clone or download then unzip this repository from github,
+ [https://github.com/Libb521/quotes.github.io](https://github.com/Libb521/quotes.github.io).
+- If you have git Use this command `git clone *` to clone the project.
+- Run ng serve from your terminal to see how the app is rendered on your browser.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Live Demo
+To view the page click on the link below
+* [https://github.com/Libb521/quotes.github.io](*)
 
-## Build
+## Technologies Used
+- Angular CLI
+- HTML
+- CSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Known Bugs
+- There are no known bugs currently. The page works as expected.
 
-## Running unit tests
+## Support and Contact Details
+- For any comments,suggestions,feedback or inquiries, contact me via email: `eotieno39@yahoo.com`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+- Make contributions to the code.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+- This app is licensed under the MIT Open Source license Copyright (c) 2020. [Elizabeth Ayiemba Otieno](https://github.com/Libb521)
