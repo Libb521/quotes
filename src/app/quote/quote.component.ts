@@ -9,11 +9,13 @@ import { Quotes } from '../quotes';
 export class QuoteComponent implements OnInit {
 
   quotes:Quotes [] = [
-    {id:1, name:'If you are always trying to be normal you will never know how amazing you can be',description:'Maya Angelou'},
-    {id:2, name:'Tears are words that need to be written',description:'Paulo Coelho'},
-    {id:3, name:'Writing books is the closest men ever come to childbearing',description:'Norman Mailer'},
-    {id:4, name:'Solve math homework',description:'Damn Math'},
+    new Quotes(1, '"If you are always trying to be normal you will never know how amazing you can be"', 'Maya Angelou'),
+    new Quotes(2, '"Tears are words that need to be written"', 'Paulo Coelho'),
+    new Quotes(3, '"Writing books is the closest men ever come to childbearing"', 'Norman Mailer'),
   ];
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit() {

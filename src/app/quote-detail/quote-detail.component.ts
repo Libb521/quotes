@@ -9,7 +9,7 @@ import { Quotes} from '../quotes';
 export class QuoteDetailComponent implements OnInit {
   
 
-  @Input() quotes: Quotes
+  @Input() quote: Quotes
 
   upvotes=0;
   downvotes=0;
