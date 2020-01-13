@@ -1,20 +1,15 @@
-
-    
-      <h1>Inspirational Quotes</h1>
-      <hr>
-      <ul>
-        <div *ngFor='let quote of quotes;let i = index'> 
-          <li>{{quote.name}}</li> <br>
-          <!-- <li>{{quote.description}}</li> -->
-          <button (click)='toggleDetails(i)'>Show details</button>
+<h1>Inspirational Quotes</h1>
+<hr>
+<ul>
+  <div *ngFor='let quote of quotes;let i = index'>
+    <li>{{quote.name}}</li> <br>
+    <button (click)='toggleDetails(i)'>Show details</button>
     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
-    </div>
-    </ul>
-    <p *ngIf='quotes.length > 5'>You have too many goals</p>
+  </div>
+</ul>
+<p *ngIf='quotes.length > 2'>Get inspired :-)</p>
 
 
-    <!-- <button class="btn btn-info" (click)="upvote(i)">Upvote </button>
+<!-- <button class="btn btn-info" (click)="upvote(i)">Upvote </button>
                     <button class="btn btn-info" (click)="downvote(i)">Downvote </button>
                     <button class="btn btn-danger" (click)="delQuote(i)">Delete</button> -->
-
-                   
