@@ -20,9 +20,7 @@ Clone or download then unzip this repository from github,
 - If you have git Use this command `git clone *` to clone the project.
 - Run ng serve from your terminal to see how the app is rendered on your browser.
 
-## Live Demo
-To view the page click on the link below
-* [https://libb521.github.io/quotes.github.io/](*)
+[![codebeat badge](https://codebeat.co/badges/123e2803-a25b-47d3-a8dc-b1614d795c15)](https://codebeat.co/projects/github-com-libb521-quotes-github-io-gh-pages)
 
 ## Technologies Used
 - Angular CLI
