@@ -1,4 +1,4 @@
-# Quotes
+# Quotes project
 #### Quotes, January 13th 2020
 #### By **Elizabeth Ayiemba Otieno**
 
