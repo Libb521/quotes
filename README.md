@@ -22,7 +22,7 @@ Clone or download then unzip this repository from github,
 
 ## Live Demo
 To view the page click on the link below
-* [https://github.com/Libb521/quotes.github.io](*)
+* [https://libb521.github.io/quotes/](*)
 
 ## Technologies Used
 - Angular CLI
